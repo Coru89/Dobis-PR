@@ -51,7 +51,7 @@ color: #0a2b7c;
 
 @media (max-width:1200px) {
 	#who .card-employee {
-		width: 12.6rem;
+		width: 13rem;
 		margin: 5% auto;
 		right: 0;
 	}
@@ -68,7 +68,7 @@ color: #0a2b7c;
 		width: 20rem;
 	}
 	#who .card-employee {
-		width: 13rem;
+		width: 20rem;
 		margin: 5% auto;
 		/*right: 0;*/
 	}
@@ -83,5 +83,19 @@ color: #0a2b7c;
 	}
 	#who .card-leader {
 		width: 26rem;
+	}
+	#who .card-employee {
+		width: 12.1rem;
+		margin: 5% 20%;
+	}
+	#who .card-employee-right {
+		margin: 5% 0;
+	}
+}
+
+@media (max-width:576px) {
+	#who .card-employee, #who .card-leader {
+		width: 20rem;
+		margin: 5% auto;
 	}
 }

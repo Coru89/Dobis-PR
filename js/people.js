@@ -3,7 +3,7 @@ $(document).ready(function(){
 console.log('are we here?');
 
 	$.ajax({
-		url: "/data/leaders.json",
+		url: "data/leaders.json",
 		// data: $(this).serialize(),
 		type: "GET",
 		dataType: "json",
