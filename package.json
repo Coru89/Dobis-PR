@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-demo",
+  "version": "1.0.0",
+  "description": "testing out bootstrap",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.0.6"
+  },
+  "devDependencies": {
+    "gulp-compile-handlebars": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://coru89@github.com/Coru89/Bootstrap-4-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coru89/Bootstrap-4-course/issues"
+  },
+  "homepage": "https://github.com/Coru89/Bootstrap-4-course#readme"
+}

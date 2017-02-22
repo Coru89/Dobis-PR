@@ -1,0 +1,87 @@
+#who {
+	background-color: #f6f6f6;
+	padding: 5rem 0;
+}
+
+#who hr {
+	width: 25%;
+}
+
+#who .btn-who {
+	background-color: #0a2b7c;
+	color: #fff;
+	width: 25%;
+	cursor: pointer;
+	margin: 3rem 0;
+}
+
+#who .btn-who:hover {
+background-color: transparent;
+border: 1px solid #0a2b7c;
+color: #0a2b7c;
+}
+
+#who .card {
+	margin: 0 auto;
+}
+
+#who .card-leader {
+	width: 31rem;
+
+}
+#who .card-employee {
+	width: 13rem;
+	/*right: 43px;*/
+	margin: 5% auto;
+}
+
+
+
+
+
+
+#who .card-img-top {
+	width: 100%;
+	max-height: 622px;
+}
+
+#who .card-title {
+	font-weight: bold;
+}
+
+@media (max-width:1200px) {
+	#who .card-employee {
+		width: 12.6rem;
+		margin: 5% auto;
+		right: 0;
+	}
+	#who .card-leader {
+		width: 28rem;
+		margin: 5% auto;
+		right: 0;
+	}
+
+}
+
+@media (max-width:992px) {
+	#who .card-leader {
+		width: 20rem;
+	}
+	#who .card-employee {
+		width: 13rem;
+		margin: 5% auto;
+		/*right: 0;*/
+	}
+}
+
+@media (max-width:768px) {
+	#who {
+		text-align: center;
+	}
+	#who .card {
+		margin: 5% auto;
+	}
+	#who .card-leader {
+		width: 26rem;
+	}
+}
