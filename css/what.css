@@ -1,4 +1,19 @@
+#what {
+	padding: 5rem 0;
+}
+
 #what .card-img-top {
-	max-height: 200px;
 	width: 100%;
 }
+
+@media (max-width:768px) {
+	#what {
+		text-align: center;
+	}
+}
+
+@media (max-width:576px) {
+	#what .card, #what .card {
+		width: 20rem;
+		margin: 5% auto;
+	}
