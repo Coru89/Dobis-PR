@@ -1,6 +1,20 @@
 $(document).ready(function(){
 
-console.log('are we here?');
+	var firstName;
+	var lastName;
+
+	$(window).scroll(function(){
+		console.log("scrolling");
+		function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+	})
 
 	$.ajax({
 		url: "data/leaders.json",
@@ -8,11 +22,7 @@ console.log('are we here?');
 		type: "GET",
 		dataType: "json",
 		success: function (data, status, xhr) {
-			// console.log("data:")
-			// console.log("status:")
 			console.log(status);
-			// console.log("xhr:");
-			// console.log(xhr);
 
 			for (i = 0; i < data.people.length; i++) {
 				// console.log(data.people[i].Name);
@@ -29,7 +39,7 @@ console.log('are we here?');
 	})
 
 	$.ajax({
-		url: "https://randomuser.me/api/?nat=ch&results=10",
+		url: "https://randomuser.me/api/?&results=4&gender=female",
 		// data: $(this).serialize(),
 		type: "GET",
 		dataType: "json",
@@ -40,7 +50,12 @@ console.log('are we here?');
 			console.log(data.results.length);
 			for (i = 0; i < data.results.length; i++) {
 				// console.log(data.people[i].Name);
-				document.getElementById('name-' + i).innerHTML = data.results[i].name.first + " " + data.results[i].name.last;
+
+				firstName = data.results[i].name.first.charAt(0).toUpperCase() + data.results[i].name.first.substring(1);
+				lastName = data.results[i].name.last.substring(0,1).toUpperCase() + data.results[i].name.last.substring(1);
+
+				document.getElementById('name-' + i).innerHTML = firstName + "<br>" + lastName;
+				document.getElementById('fname-' + i).innerHTML = firstName;
 				console.log(data.results[i].picture.medium);
 				document.querySelector('.card-img-employee-' + i).setAttribute("src", data.results[i].picture.large);
 				// document.getElementById('title-' + i).innerHTML = data.people[i].Title;

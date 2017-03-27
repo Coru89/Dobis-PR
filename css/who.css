@@ -7,6 +7,11 @@
 	width: 25%;
 }
 
+#who h3 {
+	padding-left: 22px;
+	margin: 3% 0 2% 0;
+}
+
 #who .btn-who {
 	background-color: #0a2b7c;
 	color: #fff;
@@ -23,26 +28,25 @@ color: #0a2b7c;
 
 #who .card {
 	margin: 0 auto;
+	border: hidden;
 }
 
 #who .card-leader {
 	width: 31rem;
-
 }
+
 #who .card-employee {
 	width: 13rem;
-	/*right: 43px;*/
 	margin: 5% auto;
 }
 
-
-
-
-
+#who .card-employee .card-title {
+	/*text-align: center;*/
+}
 
 #who .card-img-top {
 	width: 100%;
-	max-height: 622px;
+	height: auto;
 }
 
 #who .card-title {
@@ -60,7 +64,9 @@ color: #0a2b7c;
 		margin: 5% auto;
 		right: 0;
 	}
-
+	#who h3 {
+		padding-left: 0;
+	}
 }
 
 @media (max-width:992px) {

@@ -2,8 +2,47 @@
 	padding: 5rem 0;
 }
 
+#what .btn {
+	background-color: #0a2b7c;
+}
+
+#what .card-block {
+	background-color: #f6f6f6;
+}
+
+#what .img-container {
+	position: relative;
+}
+
 #what .card-img-top {
 	width: 100%;
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+#what .img-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	background-image: url(/img/eye.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#what .img-overlay:hover {
+	z-index: 1;
+	opacity: 1;
+}
+
+#what .video {
+	background-image: none;
 }
 
 @media (max-width:768px) {
