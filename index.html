@@ -31,6 +31,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#who">WHO WE ARE</a>
 				</li>
+<!--				adding attributes allows boootsrap collapse with transition: data-toggle="collapse" data-target="#navigation"-->
 			</ul>
 		</div>
 	</nav>
@@ -200,17 +201,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Our Work</h2>
+					<h2>What We Do</h2>
 					<hr align="left" width="30%" class="">
 					<p>some shit here</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-sm-6">
+				<div class="col-sm-6 col-12 col-lg-3">
 					<div class="card">
 						<div class="img-container">
 							<img class="card-img-top img-fluid" src="img/keys.png" alt="Card image cap">
-							<div class="img-overlay"></div>
+							<div class="img-overlay" data-row="top"></div>
 						</div>
 		 				<div class="card-block">
 						    <h4 class="card-title">Business hacks</h4>
@@ -219,11 +220,11 @@
 		  				</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-sm-6 col-12 col-lg-3">
 					<div class="card">
 						<div class="img-container">
 		  					<img class="card-img-top img-fluid" src="img/dobis_IBM.png" alt="Card image cap">
-							<div class="img-overlay"></div>
+							<div class="img-overlay" data-row="top"></div>
 						</div>
 		 				<div class="card-block">
 						    <h4 class="card-title">Technical evangelists</h4>
@@ -232,13 +233,13 @@
 		  				</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-sm-6 col-12 col-lg-3">
 					<div class="card">
 						<div class="img-container">
 							<div class="embed-responsive embed-responsive-4by3">
 								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YviYufXRw0g"></iframe>
 							</div>
-							<div class="img-overlay video"></div>
+							<div class="img-overlay video" data-row="bottom"></div>
 						</div>
 						<div class="card-block">
 							<h4 class="card-title">Our brand</h4>
@@ -246,11 +247,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-sm-6 col-12 col-lg-3">
 					<div class="card">
 						<div class="img-container">
 							<img class="card-img-top img-fluid" src="img/business.jpg" alt="Card image cap">
-							<div class="img-overlay"></div>
+							<div class="img-overlay" data-row="bottom"></div>
 						</div>
 						<div class="card-block">
 							<h4 class="card-title">Disrupting markets</h4>
@@ -261,6 +262,12 @@
 				</div>
 			</div>
 		</div>
+		<div id="img-modal-overlay">
+			<div class="img-modal-wrapper">
+				<img id="img-modal" src="" alt="">
+			</div>
+		</div>
+
 	</section>
 	<!-- END WHAT -->
 
@@ -294,14 +301,16 @@
 		</div>
 	</section>
 	<!-- WHY END -->
+	<!-- WHY END -->
 
 	<!-- jQuery first, then Tether, then Bootstrap JS. -->
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/topnav.js" type="text/javascript"></script>
+	<script src="js/imgmodal.js" type="text/javascript"></script>
 	<script src="js/people.js" type="text/javascript"></script>
 	<script src="js/scroll.js" type="text/javascript"></script>
 </body>
-
 </html>

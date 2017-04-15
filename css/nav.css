@@ -27,4 +27,5 @@ ul.navbar-nav {
 button.navbar-toggler {
     color: black;
 	margin: 14px 0;
+	cursor: pointer;
 }
