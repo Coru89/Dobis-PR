@@ -32,6 +32,7 @@ color: #0a2b7c;
 }
 
 #who .card-leader {
+	display: block;
 	width: 31rem;
 }
 
