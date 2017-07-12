@@ -60,6 +60,7 @@ color: #0a2b7c;
 		right: 0;
 	}
 	#who .card-leader {
+		display: block;
 		width: 28rem;
 		margin: 5% auto;
 		right: 0;
