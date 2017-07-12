@@ -2,8 +2,8 @@
 	padding: 4.25rem 0;
 }
 
-#social .container {
-
+#social .list-inline-item {
+	cursor: pointer;
 }
 
 #social .fa {

@@ -1,5 +1,6 @@
 #what {
 	padding: 5rem 0;
+	position: relative;
 }
 
 #what .btn {
@@ -45,6 +46,34 @@
 	background-image: none;
 }
 
+/*IMAGE MODAL*/
+.img-modal-wrapper {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	z-index:5;
+	max-width: 80%;
+}
+
+#img-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black; 
+	z-index: 4;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.modal-open {
+	overflow: hidden;
+}
+
+
+/*IMAGE MODAL END*/
 @media (max-width:768px) {
 	#what {
 		text-align: center;
