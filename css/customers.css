@@ -2,6 +2,9 @@
 	padding: 5rem 0;
 }
 #customers .carousel-indicators li {
+    background-color: yellow;
+}
+#customers .carousel-indicators li .active {
     background-color: #0a2b7c;
 }
 #customers .carousel-inner {
