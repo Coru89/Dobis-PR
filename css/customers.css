@@ -1,8 +1,6 @@
 #customers {
 	padding: 5rem 0;
 }
-#customers .carousel-indicators {
-    margin-bottom: 50px;
 }
 #customers .carousel-indicators li {
     background-color: rgba(0, 0, 0, 0.1);
@@ -10,6 +8,8 @@
 #customers .carousel-indicators .active{
     background-color: #0a2b7c;
 }
-#customers .carousel-item {
+#customers .carousel-inner {
     margin-bottom: 50px;
 }
+#customers .carousel-indicators {
+    margin-bottom: -50px;
